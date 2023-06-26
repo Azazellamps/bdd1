@@ -35,9 +35,11 @@ public class DataHelper {
 
     @Value
     public static class InfoCard {
+
         String number;
         String id;
 
-    }
 
+
+    }
 }

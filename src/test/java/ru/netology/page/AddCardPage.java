@@ -21,7 +21,7 @@ public class AddCardPage {
 
     public DashboardPage upperCard(int amount, DataHelper.InfoCard infoCard) {
         amountField.sendKeys(Keys.LEFT_SHIFT, Keys.HOME, Keys.BACK_SPACE);
-        amountField.setValue(amount + "");
+        amountField.setValue(String.valueOf(amount));
         fromField.setValue(infoCard.getNumber());
         topUpButton.click();
         return new DashboardPage();

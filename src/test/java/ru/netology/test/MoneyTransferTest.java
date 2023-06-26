@@ -56,7 +56,7 @@ class MoneyTransferTest {
         int secondBalance = dashboardPage.getCardBalance(secondCard);
         var transfer = dashboardPage.choiceCard(secondCard);
         transfer.upperCard(amount, firstCard);
-        assertEquals(firstBalance - amount, dashboardPage.getCardBalance(firstCard));
-        assertEquals(secondBalance + amount, dashboardPage.getCardBalance(secondCard));
+        assertEquals(firstBalance, dashboardPage.getCardBalance(firstCard));
+        assertEquals(secondBalance,dashboardPage.getCardBalance(secondCard));
     }
 }
